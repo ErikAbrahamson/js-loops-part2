@@ -12,7 +12,7 @@ for (var i = students.length; i >= 0 ; i--) {
   console.log(students[i]);
 }
 //4
-function getForth() {
+function getFourth() {
   var studentsCopy = students.slice();
   var clonedStudent = studentsCopy.slice(1, 4);
   var i = 0, j = 1;
@@ -21,3 +21,4 @@ function getForth() {
   }
   return studentsCopy;
 }
+console.log(getFourth());
