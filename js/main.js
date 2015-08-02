@@ -12,10 +12,12 @@ for (var i = students.length; i >= 0 ; i--) {
   console.log(students[i]);
 }
 //4
-for (var i = 0; i <= students.length; i++) {
+
+
+for (var i = 0; i < 3; i++) {
   var studentsCopy = students.slice();
-  var clonedStudent = studentsCopy.slice(1,4);
-  for (var c = 0; c < clonedStudent.length; c++) {
-    studentsCopy.splice(i + 2, 0, clonedStudent[c]);
+  var clonedStudent = studentsCopy.slice(1, 4);
+  for (var x = 1; x < 6; x+=2) {
+    studentsCopy.splice(x, 0 , clonedStudent[i]);
   }
 }
